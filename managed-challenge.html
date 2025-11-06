@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verifying...</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        background: #fff;
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+
+      .container {
+        max-width: 32rem;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: #111;
+        margin: 0 0 0.5rem 0;
+      }
+
+      p {
+        color: #666;
+        font-size: 0.875rem;
+        margin: 0 0 2rem 0;
+      }
+
+      .challenge {
+        margin: 2rem 0;
+      }
+
+      .footer {
+        margin-top: 3rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eee;
+      }
+
+      .footer p {
+        color: #999;
+        font-size: 0.75rem;
+        margin: 0.25rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Checking if the site connection is secure...</h1>
+      <p>::REQUESTED_HOST:: needs to review the security of your connection before proceeding.</p>
+
+      <div class="challenge">::CAPTCHA_BOX::</div>
+
+      <div class="footer">
+        <p>Ray ID: ::RAY_ID::</p>
+        <p>Performance & security by Cloudflare</p>
+      </div>
+    </div>
+
+    <script>
+      (function () {
+        const referrer = document.referrer;
+        if (referrer) {
+          document.cookie = `cf_referrer=${encodeURIComponent(referrer)}; path=/; max-age=3600; SameSite=Lax`;
+        }
+      })();
+    </script>
+  </body>
+</html>
